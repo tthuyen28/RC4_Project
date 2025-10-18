@@ -39,32 +39,22 @@ RC4_Project/
 
 ## Cách biên dịch & chạy
 
-### Mã hóa
-
-````bash
+```bash
+# --- Mã hóa ---
 cd RC4_Project/RC4_Encrypt_C
 gcc main.c rc4.c -o encrypt.exe
 ./encrypt.exe
 
-- Chương trình sẽ in ra ciphertext (chuỗi hex).
-- Bạn sao chép chuỗi hex đó để đưa vào chương trình giải mã.
+# --- Giải mã ---
+cd RC4_Project/RC4_Decrypt_C
+gcc main.c rc4.c -o decrypt.exe
+./decrypt.exe
+```
 
-### Giải mã
-
-```bash
-    cd RC4_Project/RC4_Decrypt_C
-    gcc main.c rc4.c -o decrypt.exe
-
-    - Trong main.c của dự án giải mã, tìm dòng:
-        const char *hex_cipher = "PUT_HEX_OUTPUT_HERE";
-        và thay "PUT_HEX_OUTPUT_HERE" bằng chuỗi hex bạn thu được từ chương trình mã hóa. Sau đó chạy chương trình:
-        ```bash
-        ./decrypt.exe
-
-Kết quả: Decrypted text: Hanoi University of Science and Technology
-
-
-
-
-
-````
+- Chương trình mã hóa sẽ in ra ciphertext (chuỗi hex).
+- Bạn sao chép chuỗi hex đó để đưa vào phần giải mã.
+- Trong main.c của dự án giải mã, tìm dòng:
+  `const char *hex_cipher = "PUT_HEX_OUTPUT_HERE";`
+  và thay PUT_HEX_OUTPUT_HERE bằng chuỗi hex bạn thu được từ chương trình mã hóa.
+- Kết quả mẫu khi chạy:
+  `Decrypted text: Hanoi University of Science and Technology`
