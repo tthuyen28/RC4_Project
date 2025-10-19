@@ -16,20 +16,22 @@ Mục tiêu là để bạn thể hiện được:
 
 ---
 
-## Cấu trúc thư mục
+## 📁 Cấu trúc thư mục
 
+```bash
 RC4_Project/
 ├── README.md
 ├── RC4_Encrypt_C/
-│ ├── main.c
-│ ├── rc4.c
-│ ├── rc4.h
-│ └── encrypt.exe ← (sau khi build)
-└── RC4_Decrypt_C/
-├── main.c
-├── rc4.c
-├── rc4.h
-└── decrypt.exe ← (sau khi build)
+│   ├── main.c
+│   ├── rc4.c
+│   ├── rc4.h
+│   └── encrypt.exe ← (sau khi build)
+├── RC4_Decrypt_C/
+│   ├── main.c
+│   ├── rc4.c
+│   ├── rc4.h
+│   └── decrypt.exe ← (sau khi build)
+```
 
 - Thư viện `rc4.c` / `rc4.h` được copy vào cả hai project để mỗi project tự lập.
 - `main.c` chỉ làm nhiệm vụ gọi hàm, xuất / nhập dữ liệu.
